@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@media all and (min-width:480px) and (max-width:800px) { 
+      [class*="col-"] { 
+        width: 100%;
+       } 
+    }
+.naglowek{
+        display: grid;
+        grid-template-columns: 0fr 2fr 0fr; 
+        grid-template-areas:
+        "image h1 image1";
+}    
+.naglowek h1{
+    padding-top: 30px;
+    padding-left: 10px;
+}
+.main{
+    display: grid;
+    grid-template-columns: 0fr 1fr 1fr; 
+    grid-template-areas:
+    "baner-lewy baner baner-prawy";
+} 
+.naglowek{
+    background-color: rgb(230, 201, 241);
+    width: auto;
+    height: 100px;
+    text-align: center;
+}
+.image{
+    height: 10%;
+    padding-left: 500px;
+    padding-top: 10px;
+}
+.image1{
+    height: 10%;
+    padding-right: 500px;
+    padding-top: 10px;
+}
+.baner-lewy{
+    background-color: rgb(172, 116, 153);
+    grid-area: baner-lewy;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.baner-lewy p{
+    font-size: 20px;
+    padding-top: 20px;
+}
+.baner-lewy a{
+    font-size: 20px;
+}
+.jeden{
+    background-color: rgb(230, 201, 241);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.zdjenc{
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.baner{
+    background-color:   rgb(230, 201, 241);
+    grid-area: baner;
+    width: 1000px;
+    height: auto;
+    font-size: 20px;
+}
+.baner h2{
+    font-size: 26px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color:rgb(172, 116, 153); 
+    text-align: center;
+}
+.baner-prawy{
+    background-color: rgb(172, 116, 153);
+    grid-area: baner-prawy;
+    width: 100%;
+    height: auto;  
+}
+.strona{
+    text-align: center;
+} 
+.baner-prawy h3{
+    text-align: center;
+    padding-top: 40px;
+    font-size: 30px;
+    padding-bottom: 40px;
+}
+.baner-prawy p{
+    padding-left: 50px;
+}
+.baner-prawy img{
+    padding-left: 80px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.stopka{
+    background-color:rgb(172, 116, 153);
+    text-align: center;
+    font-size: 14px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.baner-prawy a{
+    background-color: rgb(230, 201, 241);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px 20px 20px 20px;
+}
+.baner .polecajka{
+    font-size: 15px;
+    text-align: center;
+    margin: 20px 20px 20px 20px;
+}
+.baner .polecajka p{
+    padding: 20px 20px 20px 20px;
+}
